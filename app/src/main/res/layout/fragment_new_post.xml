@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:padding="@dimen/margin_small"
+                android:text="@string/heading_new_post"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/textsize_large" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:text="@string/postCategory"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_medium"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="@dimen/margin_small"/>
+
+            <Spinner
+                android:id="@+id/spinnerPostCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:padding="@dimen/margin_small"
+                android:textColor="@color/colorPrimary"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:text="@string/postAddress"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_medium"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="@dimen/margin_small"/>
+
+            <EditText
+                android:id="@+id/edtTxtLandmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:padding="@dimen/margin_small"
+                android:textColor="@color/colorPrimary"
+                android:hint="@string/hint_landmark"
+                android:minLines="2"/>
+
+            <EditText
+                android:id="@+id/edtTxtPostAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginRight="@dimen/margin_small"
+                android:padding="@dimen/margin_small"
+                android:textColor="@color/colorPrimary"
+                android:hint="@string/hint_postAddress"
+                android:enabled="false"
+                android:clickable="false"
+                android:longClickable="false"
+                android:minLines="3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/postPic"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_medium" />
+
+            <Button
+                android:id="@+id/uploadPic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Image"/>
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmitPost"
+            android:padding="@dimen/margin_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorWhite"
+            android:text="Submit Post"/>
+    </LinearLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_small"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/postTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:text="@string/postTitle"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_xlarge"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="@dimen/margin_small"/>
+
+            <ImageView
+                android:id="@+id/loadPic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home"/>
+
+            <TextView
+                android:id="@+id/postAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:text="@string/postAddress"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_medium"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="@dimen/margin_small"/>
+
+            <TextView
+                android:id="@+id/postDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/margin_small"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/postRate"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/textsize_medium" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmitPost"
+            android:padding="@dimen/margin_small"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/themeColorGreen"
+            android:textColor="@color/colorWhite"
+            android:text="Send Message"/>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

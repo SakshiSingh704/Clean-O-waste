@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v4.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_small"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/loginHeading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/themeColorGreen"
+                    android:gravity="center"
+                    android:padding="@dimen/margin_small"
+                    android:text="@string/admission_login"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/textsize_large" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:text="@string/user_name"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/textsize_medium"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="@dimen/margin_small"/>
+
+                <EditText
+                    android:id="@+id/edtTxtUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:padding="@dimen/margin_small"
+                    android:textColor="@color/colorPrimary"
+                    android:maxLength="10"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="@dimen/margin_small"
+                    android:text="@string/your_password"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/textsize_medium" />
+
+                <EditText
+                    android:id="@+id/edtTxtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_small"
+                    android:layout_marginRight="@dimen/margin_small"
+                    android:padding="@dimen/margin_small"
+                    android:textColor="@color/colorPrimary"
+                    android:inputType="textPassword"/>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/themeColorGreen"
+                android:textColor="@color/colorWhite"
+                android:text="Login"/>
+        </LinearLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
